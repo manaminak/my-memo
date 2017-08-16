@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Date:</strong>
-  <%= @memo.date %>
-</p>
-
-<p>
-  <strong>Time:</strong>
-  <%= @memo.time %>
+  <strong>Price:</strong>
+  <%= @memo.price %>
+  yen
 </p>
 
 <p>
   <strong>Memo:</strong>
   <%= @memo.memo %>
+</p>
+
+<p class="created_time">
+  <%= @memo.created_at %>
 </p>
 
 <%= link_to 'Edit', edit_memo_path(@memo) %> |

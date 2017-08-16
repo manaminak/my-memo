@@ -69,6 +69,6 @@ class MemosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def memo_params
-      params.require(:memo).permit(:date, :time, :memo)
+      params.require(:memo).permit(:created_at, :price, :memo)
     end
 end
